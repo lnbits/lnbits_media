@@ -1,0 +1,42 @@
+## LNBits: More Than Just a Lightning Wallet
+
+Some people first encounter LNBits and see a Lightning wallet. While that isn't wrong, it misses the bigger picture. At its core, LNBits is a powerful **multi-wallet payment accounting system** designed to manage balances, permissions, splits, and financial flows.
+
+In a typical production setup, LNBits connects to a real Lightning node (the "Funding Source"). Sats move, and invoices get paid. However, there is a powerful, overlooked feature: the **Fake Wallet** funding source.
+
+
+### The Secret Sauce: The "Fake Wallet"
+LNBits doesn't actually require "real money" to function; it requires a [Funding Source](https://docs.lnbits.org/guide/funding-sources-table.html).
+
+A funding source provides units of value that LNBits can account for, move between wallets, and reconcile. The -Fake Wallet- mimics value without touching the Lightning Network. These units don't have to be Bitcoin, they can represent anything the host defines.
+
+This single detail unlocks entirely new use cases where LNBits acts as a private ledger for any digital unit.
+
+
+### Use Case 1: Digital Currency for Festivals
+
+Imagine a large-scale festival where physical cash and vouchers are a logistical nightmare.
+
+* **The Setup:** At the entrance, visitors exchange $100 for "Festival Credits" issued through an LNBits Fake Wallet. These units represent monetary power within the venue.
+* **The Experience:** Payments happen via linked wristbands or a simple mobile app with QR codes.
+* **The Benefit:** Every drink, meal, and t-shirt sale is accounted for digitally. Vendors get instant settlement inside the system, and organizers get real-time data insights with zero physical logistics.
+
+Merchants trade value points for fiat money with the festival owner at the end. Clean Accounting.
+
+
+### Use Case 2: Internal Corporate Rewards
+
+The same mechanism works seamlessly for internal company incentives. Highly motivated organizations can power internal credit systems at scale.
+
+**Employees can earn credits for:**
+
+* Performance bonuses and achievements.
+* Knowledge sharing and internal contributions.
+* Special project milestones.
+
+
+
+When you start bulding on LNBits?
+
+* **Get Started:** Spin up your own instance in minutes at [LNBits.com](https://lnbits.com).
+* **Open Source:** Explore the code and contribute on [GitHub](https://github.com/lnbits).

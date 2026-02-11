@@ -1,0 +1,40 @@
+# Sell Your Time for Sats
+What if booking a time slot and paying for it were the same moment?
+
+---
+
+There's something broken about how we sell our time. You send someone your availability. They pick a slot. And then the actual transaction — the part where money moves — becomes a separate problem. A follow-up email with a payment link. A bank transfer that takes days. A processor that skims a percentage off every hour you worked.
+
+The booking and the payment are two different events. But they don't have to be.
+
+## When payment becomes the booking
+
+Imagine a guitar teacher in Buenos Aires. She gives online lessons to students across three continents. Right now, coordinating time zones is the easy part — it's getting paid that's complicated. Different currencies, different processors, different rules depending on where the student lives.
+
+With LNCalendar, she shares a single link. A student in Tokyo picks a Tuesday afternoon slot, scans a QR code, and pays. The appointment is confirmed the moment the sats arrive. No invoicing. No currency conversion headaches. No waiting for a transfer to clear before confirming the session.
+
+The same link works for her student in Lagos and her student in Berlin. Lightning doesn't care about borders.
+
+## It's simpler than it sounds
+
+LNCalendar is a small extension inside LNBits. You set your days, your hours, your price — and it gives you a public page. That's it. Anyone with the link sees your open slots. They pick one, they pay, it's booked.
+
+There's no account creation for the person booking. No onboarding flow. No credit card form. The payment itself is the only step that matters, and it takes about five seconds.
+
+Unpaid bookings clean themselves up after 24 hours. If someone changes their mind before paying, the slot quietly becomes available again.
+
+## The use cases that open up
+
+A developer doing paid code reviews. A community organizer charging for workshop seats. A bitcoiner offering consulting hours to newcomers. A podcast host selling guest slots.
+
+These are all people who have time to offer but no reason to pay Calendly $10/month plus Stripe's cut on every transaction. They just need a calendar and a Lightning wallet.
+
+LNCalendar runs on your own LNBits instance. You can price in sats or in fiat — the student sees a number they understand, you receive bitcoin. Multiple schedules can flow into different wallets if you want to keep things organized.
+
+
+When you start bulding on LNBits?
+
+* **Get Started:** Spin up your own instance in minutes at [LNBits.com](https://lnbits.com).
+* **Open Source:** Explore the code and contribute on [GitHub](https://github.com/lnbits).
+
+You might be surprised how many people are willing to pay for your time when you make it this easy.

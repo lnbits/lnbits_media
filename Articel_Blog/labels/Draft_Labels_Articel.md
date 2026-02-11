@@ -4,8 +4,8 @@
 If you are using LNbits, you already know how flexible and lightweight it is. It gives creators, shops, developers, families, and entire communities the tools to manage Lightning payments in a simple way.
 Now LNbits has added a feature that looks small at first glance but turns out to be incredibly useful: Labels.  
 
-With labels, you can group payments or wallets under custom names like “Family Transaction”, “Black Week Promotion”, “Event Community”, or whatever fits your needs.
-It’s easy, it’s flexible, and the “oh wow, this helps a lot” moment comes very fast.
+With labels, you can group payments under custom names like“Family Transaction”, “Black Week Promotion”, “Event Community”, or whatever fits your needs.
+It’s easy and the “oh wow, this helps a lot” moment comes very fast.
 
 https://github.com/lnbits/lnbits_media/blob/main/Labels_tx_list.png?raw=true
 
@@ -13,7 +13,7 @@ https://github.com/lnbits/lnbits_media/blob/main/Labels_tx_list.png?raw=true
 A label is a tag you create inside LNbits. You can assign it to invoices:  
 
   - after the invoice was already created,
-  - or directly through the API if you are integrating LNbits into an app.
+  - or directly through the API if you are integrating LNbits into your app.
 
 > We called them Labels, just like GitHub has.
 
@@ -21,11 +21,11 @@ Think of it as little organizers for your payment world. They help you group, fi
 
 https://github.com/lnbits/lnbits_media/blob/main/Labels_create.png?raw=true
 
-## Why Labels will Matter  
+## What labels can do for you 
 When you run a store, host events, or manage multiple projects you might have used separate wallets, a custom solution or spreadsheets to keep things apart.
 **Labels change that.**
 
-They let you keep everything in one wallet while still organizing it clearly. Its also possible to create a CSV and Filter them with ease. This makes LNbits not only more powerful but also much easier for everyone to use.
+They let you keep everything in one wallet while still organizing it clearly. Its also possible to create a CSV and Filter them with ease.This makes LNbits not only more powerful but also much easier for everyone to use.
 
 ### Example 1  
 
@@ -37,13 +37,13 @@ Imagine you run a small business with:
   -	an online shop,
   -	a special sale week.  
 
-Before labels, you either needed multiple wallets or manual tracking.  Now you simply create labels like:  
+Before labels, you either needed multiple wallets or manual tracking. Now you simply create labels like:  
 
   -	“Store Offline”
   -	“Store Online”
   -	“Black Week Promo”  
 
-Every time you create an invoice, you choose the matching label. Later, you filter by label and instantly see:  
+Every time you create an invoice, you choose the matching label.Later, you filter by label and instantly see:  
 
   -	how much Black Week brought in,
   -	how much came from your online shop,
@@ -55,10 +55,10 @@ Every time you create an invoice, you choose the matching label. Later, you fi
 
 **Events, Meetups, Workshops**  
 
-Let’s say you organize a Bitcoin meetup and accept Lightning tips or payments for drinks and snacks.  You create a label like “Meetup October”.
+Let’s say you organize a Bitcoin meetup and accept Lightning tips or payments for drinks and snacks. You create a label like “Meetup October”.
 During the event, everyone pays as usual.  
 
-After the event, you filter all transactions by the label.  Boom — you instantly see:  
+After the event, you filter all transactions by the label. Boom — you instantly see:  
 
   -	how many tips came in,
   -	how much revenue the event generated,
@@ -67,7 +67,6 @@ After the event, you filter all transactions by the label.  Boom — you insta
 
 > makes accounting becomes effortless.
 
-## Why This Makes LNbits Even Greater  
 
 LNbits has always focused on being simple, modular, and approachable. Labels add the missing piece.  
 
