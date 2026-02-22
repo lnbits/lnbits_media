@@ -1,0 +1,76 @@
+# Spark L2 Funding Source - Developer Reference
+
+## 1. Technical Architecture
+
+Spark L2 is a **shared-signing protocol** using **threshold FROST signatures**. It bridges to the Lightning Network via a **Spark Service Provider (SSP)**.
+
+* **Statechain Core:** UTXOs are held in multi-sig addresses. Ownership is transferred by updating the statechain leaf, not by broadcasting to L1.
+* **The Bridge:** When an LNbits user pays a BOLT11 invoice, the SSP performs an atomic swap: it "locks" the user's Spark L2 balance and pays the Lightning invoice instantly.
+
+
+## 2. The "Sidecar" API Reference
+
+The Sidecar handles the complex TypeScript/FROST logic. LNbits communicates with it via a simplified REST API.
+
+| Endpoint | Method | Payload Example | Description |
+| --- | --- | --- | --- |
+| `/v1/balance` | `POST` | `{}` | Returns `sats` and `msats` available. |
+| `/v1/invoices` | `POST` | `{"amount": 500, "memo": "Dev API Test"}` | Returns a standard BOLT11 invoice. |
+| `/v1/payments` | `POST` | `{"bolt11": "lnbc500..."}` | Pays an invoice; returns a `payment_hash`. |
+| `/v1/health` | `GET` | `N/A` | Returns Spark Network & SSP status. |
+
+### Real-time Monitoring
+
+LNbits uses **Server-Sent Events (SSE)** to listen for incoming payments.
+
+* **Endpoint:** `GET /v1/invoices/stream`
+* **Event Data:** `{ "id": "payment_hash", "status": "SETTLED", "amount": 1000 }`
+
+
+## 3. Implementation Workflow
+
+### Step 1: Mnemonic & Derivation
+
+Spark uses a unique derivation path. Ensure your sidecar is configured for the correct network:
+
+* **Mainnet:** `m/8797555'/1'/0'` (Standard for 2026 Spark wallets)
+* **Regtest:** `m/8797555'/0'/0'`
+
+### Step 2: Running the Sidecar
+
+The sidecar should run as a persistent service (e.g., via `pm2` or Docker).
+
+```bash
+# Developer Sandbox Start
+export SPARK_MNEMONIC="your twelve word seed"
+export SPARK_SIDECAR_PORT=8765
+npm run start:dev
+
+```
+
+### Step 3: LNbits Logic (FastAPI)
+
+The LNbits `SparkL2Wallet` class translates these calls into Python requests.
+
+```python
+async def create_invoice(self, amount: int, memo: str):
+    response = await self.client.post("/v1/invoices", json={"amount": amount, "memo": memo})
+    return InvoiceResponse(ok=True, payment_request=response.json()["bolt11"])
+
+```
+
+
+## 4. Trust Model & Security Policies
+
+| Feature | Developer Constraint |
+| --- | --- |
+| **Trust Model** | **1-of-N**. Requires one honest Spark Operator for safety. |
+| **Recovery** | Sidecar generates **Exit Transactions** stored locally. If the SOs vanish, LNbits can trigger an L1 withdrawal. |
+| **Privacy** | The SSP sees Lightning metadata (BOLT11), but the Spark Entity only sees state updates. |
+
+
+## 5. Dev Best Practices
+
+1. **Idempotency:** Always send a `client_id` with payment requests to prevent double-spending on network timeouts.
+2. **Versioning:** Target **Spark SDK v2.4+** to support the 2026 stablecoin (USDS) native swaps.
+3. **Seed Isolation:** In a production environment, never store the `SPARK_MNEMONIC` in the database. Use **External Mode** where only the Sidecar knows the secret.
