@@ -2,14 +2,14 @@
 
 The primary barrier to Bitcoin adoption has rarely been the currency itself, but rather the friction of the infrastructure. Until recently, accepting self-custodial Lightning payments required a significant investment in hardware, time, and technical education.
 
-With the integration of **Spark L2** as a funding source for **LNbits**, that barrier has been reduced to a 12-word seed phrase. This shift marks a transition from "managing infrastructure" to "running a business."
+With the integration of **Spark L2** as a funding source for **LNbits**, that barrier has been reduced to a 12-word seed phrase. This shift marks a transition from "managing infrastructure" to "using lightning".
 
 
 ### The End of the "Setup Weekend"
 
-Historically, a small merchant interested in Bitcoin would face a steep learning curve: ordering hardware, syncing nodes, and managing channels. Now, the process is comparable to setting up a traditional mobile app.
+Historically, a person or business interested in using Bitcoin would face a steep learning curve: ordering hardware, syncing nodes, and managing channels. Now, the process is comparable to setting up a traditional mobile app.
 
-For a physical storefront, such as a local bar or coffee shop, the deployment of a **Terminal Proof of Sale (TPoS)** no longer requires a backend server. By utilizing a Spark-compatible wallet and pointing an LNbits instance toward the seed phrase, a merchant can begin accepting payments in the time it takes to serve a customer. The hardware requirement is reduced to a simple tablet or smartphone.
+For a physical storefront, such as a local bar or coffee shop, the deployment of a **Terminal Proof of Sale (TPoS)** can be done quickly and easily while allowing the user to keep ownership of their funds. By using a Spark-compatible wallet and pointing an LNbits instance toward the seed phrase, a merchant can begin accepting payments in the time it takes to serve a customer. The hardware requirement is reduced to a simple tablet or smartphone.
 
 ### Scalability Without Complexity
 
@@ -23,19 +23,19 @@ This "Seed-to-Business" pipeline ensures that the focus remains on the product a
 
 ### Unified Liquidity: One Balance, Everywhere
 
-One of the most significant advantages of this pattern is the synchronization of funds. When using self-custodial wallets like **Phoenix, Blixt, or Zeus**, the merchant maintains a single balance across all platforms.
+One of the most significant advantages of this pattern is the synchronization of funds. When using self-custodial wallets like **Phoenix, Blixt, or Zeus**, the merchant maintains a single balance across all applications.
 
-By sharing the seed phrase between a mobile wallet and LNbits, there is no longer a need to "shuffle" liquidity between different nodes. Funds received at a physical point-of-sale are immediately available on the merchant’s mobile device for personal use or restocking, without internal transfer fees or on-chain waiting times.
+By sharing the seed phrase between a mobile wallet and LNbits, there is no longer a need to "shuffle" liquidity between different nodes. Funds received at a physical point-of-sale are immediately available on the merchant’s mobile device for use, without internal transfer fees or on-chain waiting times.
 
 ### A Future-Proof Foundation
 
 LNbits is often described as the "WordPress of Bitcoin." Its modular architecture allows businesses to start with a minimal setup and scale as needed.
 
-Because the platform is **funding-source agnostic**, a business can begin with a simple 12-word Spark L2 setup today. As the business grows, the backend can be swapped for a dedicated **LND, CLN, or Phoenixd** node without disrupting the frontend experience. Users, extensions, and payment flows remain intact, providing a seamless "level-up" path for growing enterprises.
+Because the platform is **funding-source agnostic**, a business can begin with a simple 12-word Spark L2 setup today. As the business grows, the backend could be swapped for an alternative funding source without disrupting the frontend experience. Users, extensions, and payment flows remain intact, providing a seamless "level-up" path for growing enterprises.
 
 ### The Bottom Line
 
-The era of "technical bottleneck" has ended. The ability to go from a fresh installation to a fully functional, Lightning-powered enterprise now takes less time than creating a social media profile. Spark L2 and LNbits have turned 12 words into a complete financial toolkit.
+The era of "technical bottleneck" has ended. The ability to go from a fresh installation to a fully functional, Lightning-powered enterprise now takes less time than creating a social media profile. Spark L2 and LNbits have turned 12 words into a turn-key financial toolkit.
 
 
 *LNbits is free, open-source, and community-driven. Explore the Spark L2 integration to bridge the gap between self-custody and commercial utility.*
