@@ -65,7 +65,6 @@ async def create_invoice(self, amount: int, memo: str):
 | Feature | Developer Constraint |
 | --- | --- |
 | **Trust Model** | **1-of-N**. Requires one honest Spark Operator for safety. |
-| **Recovery** | Sidecar generates **Exit Transactions** stored locally. If the SOs vanish, LNbits can trigger an L1 withdrawal. |
 | **Privacy** | The SSP sees Lightning metadata (BOLT11), but the Spark Entity only sees state updates. |
 
 

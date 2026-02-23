@@ -10,7 +10,7 @@ Unlike traditional custodial solutions, Spark L2 is **self-custodial**. Your fun
 ## Why Use Spark L2 for LNbits?
 
 * **Zero Infrastructure**: No LND/CLN node, no channel management, and no liquidity rebalancing required.
-* **Unified Balance**: If you use a Spark-compatible wallet (like the updated **Wallet of Satoshi in the EU**, **Blixt**, or **Phoenix**), you can share the same seed. Your phone and LNbits share one balance.
+* **Unified Balance**: If you use a Spark-compatible wallet (like the updated **Wallet of Satoshi in the EU**, **BLitz Wallet**, or **BuhoGO**), you can share the same seed. Your phone and LNbits share one balance.
 * **Offline Receipts**: The Spark network can accept Lightning payments on your behalf while your LNbits instance is offline, settling them as soon as you reconnect.
 * **Self-Custody**: You hold the keys. Funds can be recovered via a unilateral on-chain exit even if the sidecar or LNbits service is unavailable.
 
