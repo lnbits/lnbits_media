@@ -11,7 +11,7 @@ Github_docs/    Screenshots and diagrams used in GitHub docs
 
 ## How to use this repo
 
-**Writers** - Propose blog topics by opening an issue with the `blog-topic` label. Share drafts, get feedback, and collaborate before publishing on [news.lnbits.com](https://news.lnbits.com).
+**Writers** - Propose blog topics by opening an issue with the `blog-topic` label. Share drafts, get feedback, and collaborate.
 
 **Designers** - Upload creative assets (logos, illustrations, social cards) via PR. Use the `design-asset` label on issues to request or offer graphics.
 
