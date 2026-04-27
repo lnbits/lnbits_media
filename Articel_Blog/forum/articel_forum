@@ -1,0 +1,34 @@
+# LNbits Community Forum
+
+We launched a forum at [community.lnbits.com](https://community.lnbits.com).
+
+It works the way you would expect a community forum to work. The kind you already know from any larger SaaS or open source project. A place to ask questions, get help, and stay around long enough for the answer to be useful to the next person who runs into the same thing.
+
+Telegram is great for fast back and forth. The forum is for everything that should not get lost in the scroll.
+
+## What you can do there
+
+Ask a question and get a real answer. Wallet backend setup, extension behavior, deployment quirks, fiat onramp configuration, weird Lightning edge cases. Post it once, the thread stays searchable, and the next person finds it through Google instead of pinging the chat for the fifth time this month.
+
+Show what you built on LNbits. A paywall, a tipping page, a point of sale for your café, a custom extension, a wild experiment that should not work but does. The forum is the right place to put it in front of people who actually understand what they are looking at.
+
+Get feedback. Drop a screenshot, a flow, a half finished extension. The community will tell you what is missing, what is confusing, and what is already solved by an extension you did not know about.
+
+Share content. Tutorials, blog posts, videos, threads, talks. If you wrote something or recorded something about LNbits or Lightning in general, the forum is a good home for it.
+
+Spread the word. Use cases, integrations, merchant stories, weird hacks. The more we collect in one place, the easier it is for new people to see what is actually possible.
+
+## Who it is for
+
+Builders, operators, tinkerers, merchants running an LNbits instance, developers writing extensions, and anyone who is curious about Lightning and wants a slower channel than Telegram to talk it through.
+
+You do not need to be technical to post. Questions from new users are welcome and probably the most valuable threads we can build up over time.
+
+## Where to find us
+
+Forum: [community.lnbits.com](https://community.lnbits.com)
+Telegram: [t.me/lnbits](https://t.me/lnbits)
+Docs: [docs.lnbits.com](https://docs.lnbits.com)
+GitHub: [github.com/lnbits](https://github.com/lnbits)
+
+Come say hi. Ask the question you have been sitting on. Post the project you have been quietly building. The forum is only as useful as the people in it.
